@@ -1,3 +1,4 @@
+/*fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700;800&display=swap');
 
 * {
@@ -10,6 +11,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%; 
 }
+
+/*Header*/
 
 .header-container {
     display: flex;
@@ -78,6 +81,10 @@ header nav ul li a {
     font-weight: lighter;
 }
 
+/*Header*/
+
+/*Conteúdo principal*/
+
 .main-galleries {
     width: 90%;
     max-width: 1400px;
@@ -96,6 +103,10 @@ header nav ul li a {
     width: 303px;
     margin: 2px;
 }
+
+/*Conteúdo principal*/
+
+/*Footer*/
 
 footer {
     background-color: #D3D3D3;
@@ -145,12 +156,16 @@ button {
     display: none;
 }
 
+/*Footer*/
+
+/*Conteúdo responsivo*/
 
 @media (max-width: 950px) {
     header nav ul li{
         margin: 0 9px;
         width: 82px;
     }
+
     header nav ul li a {
         font-size: 20px;
     }
@@ -168,26 +183,30 @@ button {
         height: 8vh;
         justify-content: flex-start;
     }
+
     .header-logo {
         width: 50%;
         display: flex;
         justify-content: center;
     }
+
     .header-title {
         font-size:27px;
     }
+
     nav {
         display: none;
     }
 
-    .one,
-    .two,
-    .three {
+    .barra-um,
+    .barra-dois,
+    .barra-tres {
         background-color: #fff;
         height: 5px;
         width: 39%;
         margin: 4px auto;
     }
+
     .menu-hamburguer {
         width: 145px;
         height: inherit;
@@ -196,11 +215,13 @@ button {
         flex-direction: column;
         justify-content: center;
     }
+
     .footer-base{
         flex-direction: column;
         height: auto;
         align-items: end;
     }
+
     .icons-medias{
         width: 100%;
         text-align: center;
@@ -216,6 +237,7 @@ button {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     nav {
         display: none;
     }
@@ -272,3 +294,5 @@ button {
         align-items: center;
         justify-content: inherit;
     }
+
+    /*Conteúdo responsivo*/
