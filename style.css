@@ -1,4 +1,3 @@
-/*fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700;800&display=swap');
 
 * {
@@ -7,12 +6,12 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Montserrat', sans-serif;
     width: 100%; 
 }
 
-/*Header*/
+/* Header */
 
 .header-container {
     display: flex;
@@ -24,11 +23,11 @@ body {
     margin: auto;   
 }
 
-.menu-hamburguer {
+.menu-hamburguer{
     display: none;
 }
 
-.header-title {
+.header-title{
     font-weight: bold;
     font-size: 40px;
 }
@@ -38,7 +37,7 @@ header nav ul {
     display: flex;
 }
 
-header nav ul li {
+header nav ul li{
     margin: 0 15px;
     text-align: center;
     width: 90px;
@@ -46,7 +45,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color:#000;
+    color:#0000;
     font-size:20px;
 }
 
@@ -54,7 +53,7 @@ header nav ul li a {
   font-weight: 900;
 }
 
-.header-titles {
+.header-titles{
     background-image: url(img/laranja\ azul\ recorte.png);
     background-size: cover;
     background-repeat:no-repeat;
@@ -62,30 +61,28 @@ header nav ul li a {
     height: 70vh;
     color: #FFFFFF;
     display: flex;
-} 
+}
 
-.header-main {
+.header-main{
     width: 90%;
     max-width: 1400px;
     margin: auto;
 }
 
-.header-titles h2 {
+.header-titles h2{
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 18px;
-} 
+}
 
-.header-titles h3 {
+.header-titles h3{
     font-size: 33px;
     font-weight: lighter;
 }
 
-/*Header*/
+/* Main */
 
-/*Conteúdo principal*/
-
-.main-galleries {
+.main-galleries{
     width: 90%;
     max-width: 1400px;
     margin: auto;
@@ -93,61 +90,64 @@ header nav ul li a {
     margin-bottom: 60px;
 }
 
-.box-gallery {
+.box-gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.gallery-photos {
+.gallery-photos{
     width: 303px;
     margin: 2px;
 }
 
-/*Conteúdo principal*/
+/* Footer */
 
-/*Footer*/
-
-footer {
-    background-color: #f0e9e9;
+footer{
+    background-color: #D3D3D3;
 }
 
-.footer-medias {
-    width: 80%;
+.footer-base {
+    width: 90%;
     max-width: 1400px;
     margin: auto;
-    height: 10vh;
+    height: 10vh; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.icons-facebook {
+.icons-medias{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 115px;
+}
+
+.icons-facebook{
     width: 15px;
-    margin-right: 10px;
 }
 
-.icons {
+.icons{
     width: 32px;
-    margin-right: 10px;
 }
 
-.footer-box {
+.footer-box{
     width:63%;
 }
 
-.footer-referencias {
+.footer-referencias{
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.footer-copyright {
+.footer-copyright{
     font-weight: 700;
     width: 17%;
 }
 
-.footer-layout {
+.footer-layout{
     width: 83%;
     font-size: 13px;
 }
@@ -156,9 +156,7 @@ button {
     display: none;
 }
 
-/*Footer*/
-
-/*Conteúdo responsivo*/
+ /* modelo responsivo */
 
 @media (max-width: 950px) {
     header nav ul li{
@@ -168,12 +166,13 @@ button {
     header nav ul li a {
         font-size: 20px;
     }
-    
+    .footer-box{
+        width:63%;
+    } 
     .footer-referencias{
         width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: end;
+        align-items: center;
     }
    
 @media (max-width: 768px) {
@@ -182,52 +181,87 @@ button {
         height: 8vh;
         justify-content: flex-start;
     }
+    
     .header-logo{
         width: 50%;
         display: flex;
         justify-content: center;
     }
+
     .header-title{
         font-size:27px;
     }
+
     nav {
         display: none;
     }
-    .barra-um,
-    .barra-dois,
-    .barra-tres {
-        background-color: #fff;
+    
+    .linha-um,
+    .linha-dois,
+    .linha-tres {
+        background-color: #FFFFFF;
         height: 5px;
         width: 39%;
         margin: 4px auto;
     }
+
     .menu-hamburguer {
         width: 145px;
         height: inherit;
-        background-color: #0000;
+        background-color: #000000;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
+    .icons-medias{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+
     .footer-base{
         flex-direction: column;
         height: auto;
-        align-items: end;
     }
-    .icons-medias{
+
+    .footer-box{
         width: 100%;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: inherit;
+        margin-bottom: 20px;
     }
+    
+    .footer-referencias{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-copyright{
+        font-weight: 700;
+        width: 17%;
+    }
+
+    .footer-layout{
+        width: 83%;
+        font-size: 13px;
+    }
+}
 
 @media (max-width: 540px) {
     .header-container{
         width: 100%;
     }
+
     .header-titles{
         background-image: url(img/laranja\ azul\ recorte\ mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     nav {
         display: none;
     }
@@ -238,42 +272,49 @@ button {
         width: 69px;
         height: 4vh;
     }
+
     footer{
         width: 80%;
         margin: auto;
         background-color: #fff;
     }
+
     .footer-base{
         display: inline;
     }
+
     .icons-medias{
         width: 100%;
         display: flex;
         justify-content: space-around;  
+        background-color: #D3D3D3;
     }
+
     .footer-referencias{
         width: 66%;
         display: inline-block;
         white-space: pre-line;
     }
+
     .footer-copyright{
         width: 100%;
     }
+
     .footer-layout {
         width: 100%;
         font-size: 12px;
         word-break: break-word;
     }
+
     button a{
         text-decoration: none;
         color: #cccccc;
     }
+
     .footer-box{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: inherit;
     }
-
-    /*Conteúdo responsivo*/
-    
+}
