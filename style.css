@@ -109,7 +109,7 @@ header nav ul li a {
 /*Footer*/
 
 footer {
-    background-color: #D3D3D3;
+    background-color: #f0e9e9;
 }
 
 .footer-medias {
@@ -127,7 +127,7 @@ footer {
     margin-right: 10px;
 }
 
-.icons{
+.icons {
     width: 32px;
     margin-right: 10px;
 }
@@ -136,7 +136,7 @@ footer {
     width:63%;
 }
 
-.footer-ref {
+.footer-referencias {
     width: 100%;
     display: flex;
     align-items: center;
@@ -165,12 +165,11 @@ button {
         margin: 0 9px;
         width: 82px;
     }
-
     header nav ul li a {
         font-size: 20px;
     }
     
-    .footer-references {
+    .footer-referencias{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -178,26 +177,22 @@ button {
     }
    
 @media (max-width: 768px) {
-    .header-container {
+    .header-container{
         width: 100%;
         height: 8vh;
         justify-content: flex-start;
     }
-
-    .header-logo {
+    .header-logo{
         width: 50%;
         display: flex;
         justify-content: center;
     }
-
-    .header-title {
+    .header-title{
         font-size:27px;
     }
-
     nav {
         display: none;
     }
-
     .barra-um,
     .barra-dois,
     .barra-tres {
@@ -206,22 +201,19 @@ button {
         width: 39%;
         margin: 4px auto;
     }
-
     .menu-hamburguer {
         width: 145px;
         height: inherit;
-        background-color: #000;
+        background-color: #0000;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     .footer-base{
         flex-direction: column;
         height: auto;
         align-items: end;
     }
-
     .icons-medias{
         width: 100%;
         text-align: center;
@@ -230,65 +222,53 @@ button {
 @media (max-width: 540px) {
     .header-container{
         width: 100%;
-    } 
-
+    }
     .header-titles{
-        background-image: url(img/laranja\ azul\ recorte@2x.png);
+        background-image: url(img/laranja\ azul\ recorte\ mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
-
     nav {
         display: none;
     }
     
-    button {
+    button{
         display: inline;
         background-color: #333333;
         width: 69px;
         height: 4vh;
     }
-
-    footer {
+    footer{
         width: 80%;
         margin: auto;
         background-color: #fff;
     }
-
-    .footer-base {
+    .footer-base{
         display: inline;
     }
-
-    .icons-medias {
+    .icons-medias{
         width: 100%;
-        background-color: #7FDBD4;
         display: flex;
         justify-content: space-around;  
     }
-
-    .footer-ref {
+    .footer-referencias{
         width: 66%;
         display: inline-block;
         white-space: pre-line;
     }
-
-    .footer-copyright {
+    .footer-copyright{
         width: 100%;
-    } 
-
+    }
     .footer-layout {
         width: 100%;
         font-size: 12px;
         word-break: break-word;
     }
-
-    button a {
+    button a{
         text-decoration: none;
         color: #cccccc;
-        cursor: pointer;
     }
-
-    .footer-box {
+    .footer-box{
         width: 100%;
         display: flex;
         align-items: center;
@@ -296,3 +276,4 @@ button {
     }
 
     /*Conteúdo responsivo*/
+    
