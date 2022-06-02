@@ -78,6 +78,12 @@ header nav ul li a {
 .header-titles h3{
     font-size: 33px;
     font-weight: lighter;
+    cursor: pointer;
+}
+
+.header-titles h3:hover {
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(110, 104, 104, 0.3), 4px 2px 4px #5b5555;
 }
 
 /* Main */
